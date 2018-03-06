@@ -1,8 +1,137 @@
 body {
   margin: 0;
 }
+h1 {
+  font-family: 'PT Sans Narrow', bold;
+  text-shadow:0 0 1px transparent;
+  font-size: 1.875em;
+  color: #323232;
+  text-align: center;
+  padding: 0px 0 45px 0;
+  margin: 0px;
+}
+h2 {
+  font-family: 'PT Sans Narrow', bold;
+  text-transform: uppercase;
+  text-shadow:0 0 1px transparent;
+  font-size: 1.5em;
+  color: #00897f;
+}
+h3 {
+  font-family: 'PT Serif';
+  text-shadow:0 0 1px transparent;
+  font-size: 1em;
+  color: #323232;
+  line-height: 2em;
+  margin: 0px;
+  padding: 0 0 80px 0;
+}
+p {
+  font-family: 'PT Serif';
+  text-shadow:0 0 1px transparent;
+  font-size: .875em;
+  color: #323232;
+  line-height: 1.75em;
+}
+a {
+  font-family: 'PT Serif', bold;
+  text-shadow:0 0 1px transparent;
+  font-size: 1em;
+  color: #f26522;
+}
 
+.topnav #h1 {
+  font-family: 'PT Sans Narrow', bold;
+  text-shadow:0 0 1px transparent;
+  font-size: 1.5em;
+  color: #323232;
+}
+.topnav #p {
+  font-family: 'PT Sans', bold;
+  text-transform: uppercase;
+  justify-content: right;
+  text-shadow:0 0 1px transparent;
+  font-size: 0.9em;
+  color: #323232;
+}
+.footer h1 {
+  font-family: 'PT Sans Narrow', bold;
+  text-shadow:0 0 1px transparent;
+  font-size: 1.25em;
+  color: #323232;
+}
 
+.topnav ul {
+  list-style-type: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.topnav li {
+  display: inline;
+  margin-right: 5px;
+  margin-left: 6px;
+}
+.topnav {
+  float: center;
+  color: #000;
+  text-align: left;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 80px;
+  width: 100%;
+
+}
+.splash {
+  width: 100%;
+}
+.splash #mainimage{
+  width: 100%;
+}
+.main {
+  margin: 80px 150px 80px 150px;
+}
+.first {
+  display: block;
+  box-sizing: border-box;
+  height: ;
+  width: 100%;
+  text-align: center;
+  box-align: center;
+}
+.middle {
+  margin: 0 150px 0 150px;
+}
+.middle #circle1 {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 0 55px 0 0;
+}
+.middle #circle2 {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+}
+.middle #circle3 {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  margin: 0 0 0 55px;
+}
+.contact {
+    margin: 80px 0 0 0;
+    background-color: #eeeeee;
+}
+.map {
+
+}
+.map #locmap {
+  width: 100%;
+}
 /* On devices wider than 660px */
 @media(min-width: 660px) {
 }
