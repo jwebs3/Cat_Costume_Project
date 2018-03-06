@@ -58,7 +58,7 @@ a {
   font-family: 'PT Sans Narrow', bold;
   text-shadow:0 0 1px transparent;
   font-size: 1.25em;
-  color: #323232;
+  color: #ffffff;
 }
 
 .topnav ul {
@@ -83,7 +83,6 @@ a {
   box-sizing: border-box;
   height: 80px;
   width: 100%;
-
 }
 .splash {
   width: 100%;
@@ -92,7 +91,27 @@ a {
   width: 100%;
 }
 .main {
-  margin: 80px 150px 80px 150px;
+  margin: 80px 175px 80px 175px;
+}
+.box1 {
+  background-color: #eeeeee;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 300px;
+  width: 46%;
+  margin: 1px 30px 1px 1px;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
+}
+.box1 #right {
+  background-color: #eeeeee;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 300px;
+  width: 46%;
+  margin: 1px 1px 1px 30px;
+  padding: 30px 30px 30px 30px;
+  text-align: center;
 }
 .first {
   display: block;
@@ -103,7 +122,7 @@ a {
   box-align: center;
 }
 .middle {
-  margin: 0 150px 0 150px;
+  margin: 0 175px 0 175px;
 }
 .middle #circle1 {
   border-radius: 50%;
@@ -130,6 +149,11 @@ a {
 
 }
 .map #locmap {
+  width: 100%;
+}
+.footer {
+  background-color: #00897f;
+  height: 125px;
   width: 100%;
 }
 /* On devices wider than 660px */
