@@ -35,12 +35,12 @@ p {
   line-height: 1.75em;
   text-align: left;
 }
-a {
+a#first {
   font-family: 'PT Serif', bold;
   text-shadow:0 0 1px transparent;
   font-size: 1em;
   color: #f26522;
-  text-indent: 9;
+  justify-content: flex-end;
 }
 
 .topnav #h1 {
@@ -52,7 +52,7 @@ a {
 .topnav #p {
   font-family: 'PT Sans', bold;
   text-transform: uppercase;
-  justify-content: right;
+  justify-content: flex-end;
   text-shadow:0 0 1px transparent;
   font-size: 0.9em;
   color: #323232;
@@ -81,6 +81,9 @@ a {
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+.topnav ul #nav {
+  justify-content: flex-end;
 }
 .topnav li {
   display: inline;
@@ -138,6 +141,7 @@ a {
 }
 .middle {
   margin: 0 175px 0 175px;
+  justify-content: center;
 }
 .middle #circle1 {
   border-radius: 50%;
