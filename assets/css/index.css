@@ -1,6 +1,9 @@
 body {
   margin: 0;
 }
+
+*/Text Styles*/
+
 h1 {
   font-family: 'PT Sans Narrow', bold;
   text-shadow:0 0 1px transparent;
@@ -40,6 +43,8 @@ a#first {
   text-shadow:0 0 1px transparent;
   font-size: 1em;
   color: #f26522;
+  display: flex;
+  flex-direction: column;
   justify-content: flex-end;
 }
 
@@ -52,7 +57,6 @@ a#first {
 .topnav #p {
   font-family: 'PT Sans', bold;
   text-transform: uppercase;
-  justify-content: flex-end;
   text-shadow:0 0 1px transparent;
   font-size: 0.9em;
   color: #323232;
@@ -72,18 +76,14 @@ a#first {
   text-shadow:0 0 1px transparent;
   font-size: 1.25em;
   color: #ffffff;
-  padding: 50px
+  padding: 50px;
+  text-align: center;
 }
 
+*/Page Styles*/
+
 .topnav ul {
-  list-style-type: none;
-  display: inline;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.topnav ul #nav {
-  justify-content: flex-end;
+    list-style-type: none;
 }
 .topnav li {
   display: inline;
@@ -96,10 +96,15 @@ a#first {
   text-align: left;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
-  display: inline-block;
   box-sizing: border-box;
   height: 80px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 .splash {
   width: 100%;
@@ -135,7 +140,7 @@ a#first {
   box-sizing: border-box;
   height: ;
   width: 100%;
-  text-align: center;
+  text-align: left;
   box-align: center;
   margin-bottom: 80px;
 }
