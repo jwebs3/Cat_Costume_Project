@@ -82,29 +82,31 @@ a#first {
 
 */Page Styles*/
 
-.topnav ul {
-    list-style-type: none;
-}
-.topnav li {
-  display: inline;
-  margin-right: 5px;
-  margin-left: 6px;
-}
 .topnav {
-  float: center;
-  color: #000;
-  text-align: left;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
   box-sizing: border-box;
   height: 80px;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   margin: 0;
   padding: 0;
   overflow: hidden;
+}
+.topnav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.topnav ul li:first-child {
+  float: left;
+}
+.topnav ul li {
+  list-style-type: none;
+  margin: 10px;
+  margin-right: 5px;
+  margin-left: 6px;
+  text-align: left;
+  float: right;
 }
 .splash {
   width: 100%;
@@ -146,6 +148,8 @@ a#first {
 }
 .middle {
   margin: 0 175px 0 175px;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 .middle #circle1 {
@@ -198,11 +202,93 @@ a#first {
   background-color: #00897f;
   height: 125px;
   width: 100%;
+  margin: 0px;
 }
-/* On devices wider than 660px */
-@media(min-width: 660px) {
+/* On devices less than 1257px */
+@media(max-width: 1257px) {
+ .box1 {
+  display: block;
+  width: 30%;
+  height: 300px;
+  }
+  .box2 {
+  display: block;
+  width: 30%;
+  height: 300px;
+  }
 }
 
-/* On devices wider than 940px */
-@media(min-width: 940px) {
+/* On devices less than 1180px */
+@media(max-width: 1180px) {
+  .box1 {
+   display: block;
+   width: 30%;
+   height: 400px;
+   }
+   .box2 {
+   display: block;
+   width: 30%;
+   height: 400px;
+   }
+   .box3 {
+    display: block;
+    width: 30%;
+    height: 300px;
+    }
+    .box4 {
+    display: block;
+    width: 30%;
+    height: 300px;
+    }
+    .middle #circle1 {
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+    }
 }
+/* On devices less than 1180px */
+@media(max-width: 1007px) {
+  .box1 {
+   display: block;
+   width: 30%;
+   height: 500px;
+   }
+   .box2 {
+   display: block;
+   width: 30%;
+   height: 500px;
+   }
+   .box3 {
+    display: block;
+    width: 30%;
+    height: 400px;
+    }
+    .box4 {
+    display: block;
+    width: 30%;
+    height: 400px;
+    }
+}
+/* On devices less than 917px */
+@media(max-width: 917px) {
+  .box1 {
+   display: block;
+   width: 30%;
+   height: 600px;
+   }
+   .box2 {
+   display: block;
+   width: 30%;
+   height: 600px;
+   }
+   .box3 {
+    display: block;
+    width: 30%;
+    height: 500px;
+    }
+    .box4 {
+    display: block;
+    width: 30%;
+    height: 500px;
+    }
+  }
