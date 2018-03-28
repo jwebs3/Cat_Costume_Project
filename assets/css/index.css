@@ -9,7 +9,7 @@ h1 {
   text-shadow:0 0 1px transparent;
   font-size: 1.875em;
   color: #323232;
-  text-align: center;
+  text-align: center !important;
   padding: 50px;
   margin: 0px;
 }
@@ -39,15 +39,20 @@ p {
   text-align: left;
 }
 a#first {
-  font-family: 'PT Serif', bold;
+  font-family: 'PT Serif';
   text-shadow:0 0 1px transparent;
   font-size: 1em;
   color: #f26522;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  text-transform: none;
 }
-
+a#second {
+  font-family: 'PT Serif';
+  text-shadow:0 0 1px transparent;
+  font-size: 1em;
+  color: #f26522;
+  text-transform: none;
+  justify-content: center;
+}
 .topnav #h1 {
   font-family: 'PT Sans Narrow', bold;
   text-shadow:0 0 1px transparent;
@@ -62,14 +67,13 @@ a#first {
   color: #323232;
 }
 .contact h3 {
-  font-family: 'PT Serif';
+  font-family: 'PT Serif', bold;
   text-shadow:0 0 1px transparent;
   text-transform: uppercase;
   font-size: 1em;
   color: #323232;
   line-height: 2em;
   margin: 0px;
-  text-align: left;
 }
 .footer h1 {
   font-family: 'PT Sans Narrow', bold;
@@ -155,6 +159,7 @@ a#first {
   flex-direction: row;
   justify-content: space-around;
   margin: 8% 12% 8% 12%;
+  padding: 2%;
 }
 .middle #circle1 {
   border-radius: 50%;
@@ -219,91 +224,115 @@ a#first {
   width: 100%;
   margin: 0%;
 }
+
 /* On devices less than 1257px */
 @media(max-width: 1257px) {
  .box1 {
-  display: block;
-  width: 30%;
-  height: 300px;
+  width: 45%;
+  height: 225px;
   }
   .box2 {
-  display: block;
-  width: 30%;
-  height: 300px;
+  width: 45%;
+  height: 225px;
   }
 }
 
 /* On devices less than 1180px */
 @media(max-width: 1180px) {
   .box1 {
-   display: block;
-   width: 30%;
-   height: 400px;
+   width: 45%;
+   height: 250px;
    }
    .box2 {
-   display: block;
-   width: 30%;
-   height: 400px;
+   width: 45%;
+   height: 250px;
    }
    .box3 {
-    display: block;
-    width: 30%;
-    height: 300px;
+    width: 45%;
+    height: 250px;
     }
     .box4 {
-    display: block;
-    width: 30%;
-    height: 300px;
-    }
-    .middle #circle1 {
-      border-radius: 50%;
-      width: 250px;
-      height: 250px;
+    width: 45%;
+    height: 250px;
     }
 }
 /* On devices less than 1180px */
 @media(max-width: 1007px) {
   .box1 {
-   display: block;
-   width: 30%;
-   height: 500px;
+   width: 45%;
+   height: 275px;
    }
    .box2 {
-   display: block;
-   width: 30%;
-   height: 500px;
+   width: 45%;
+   height: 275px;
    }
    .box3 {
-    display: block;
-    width: 30%;
-    height: 400px;
+    width: 45%;
+    height: 275px;
     }
     .box4 {
-    display: block;
-    width: 30%;
-    height: 400px;
+    width: 45%;
+    height: 275px;
     }
 }
 /* On devices less than 917px */
 @media(max-width: 917px) {
   .box1 {
-   display: block;
-   width: 30%;
-   height: 600px;
+   width: 45%;
+   height: 300px;
    }
    .box2 {
-   display: block;
-   width: 30%;
-   height: 600px;
+   width: 45%;
+   height: 300px;
    }
    .box3 {
-    display: block;
-    width: 30%;
-    height: 500px;
+    width: 45%;
+    height: 300px;
     }
     .box4 {
-    display: block;
-    width: 30%;
-    height: 500px;
+    width: 45%;
+    height: 300px;
     }
+  }
+/* On devices less than 785px */
+@media(max-width: 785px) {
+  .mainboxes {
+    flex-direction: column;
+  }
+  .contactboxes {
+    flex-direction: column;
+  }
+  .box1 {
+   width: 100%;
+   height: 200px;
+   }
+   .box2 {
+   width: 100%;
+   height: 200px;
+   }
+   .box3 {
+    width: 100%;
+    height: 200px;
+    }
+    .box4 {
+    width: 100%;
+    height: 200px;
+    }
+  .middle #circle1 {
+    display: none;
+  }
+  .middle #circle3 {
+    display: none;
+  }
+ }
+/* On devices less than 500px */
+@media(max-width: 500px) {
+  .box1 {
+   width: 100%;
+   height: 225px;
+   }
+   .box2 {
+   width: 100%;
+   height: 225px;
+   }
   }
