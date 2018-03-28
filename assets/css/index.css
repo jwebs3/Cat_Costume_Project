@@ -10,7 +10,7 @@ h1 {
   font-size: 1.875em;
   color: #323232;
   text-align: center;
-  padding: 0px 0 45px 0;
+  padding: 50px;
   margin: 0px;
 }
 h2 {
@@ -96,9 +96,10 @@ a#first {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: flex-end;
 }
-.topnav ul li:first-child {
-  float: left;
+.topnav ul:first-child {
+  float: left !important;
 }
 .topnav ul li {
   list-style-type: none;
@@ -115,7 +116,21 @@ a#first {
   width: 100%;
 }
 .main {
-  margin: 80px 175px 80px 175px;
+  margin: 8% 12% 8% 12%;
+}
+.first {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 2%;
+  margin-bottom: 80px;
+}
+.mainboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .box1 {
   background-color: #eeeeee;
@@ -123,7 +138,6 @@ a#first {
   box-sizing: border-box;
   height: 200px;
   width: 46%;
-  margin: 1px 30px 1px 1px;
   padding: 30px 30px 30px 30px;
   text-align: center;
 }
@@ -133,30 +147,19 @@ a#first {
   box-sizing: border-box;
   height: 200px;
   width: 46%;
-  margin: 1px 1px 1px 30px;
   padding: 30px 30px 30px 30px;
   text-align: center;
 }
-.first {
-  display: block;
-  box-sizing: border-box;
-  height: ;
-  width: 100%;
-  text-align: left;
-  box-align: center;
-  margin-bottom: 80px;
-}
 .middle {
-  margin: 0 175px 0 175px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  margin: 8% 12% 8% 12%;
 }
 .middle #circle1 {
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  margin: 0 55px 0 30px;
 }
 .middle #circle2 {
   border-radius: 50%;
@@ -167,12 +170,23 @@ a#first {
   border-radius: 50%;
   width: 250px;
   height: 250px;
-  margin: 0 0 0 55px;
 }
 .contact {
-    margin: 80px 0 0 0;
-    padding: 80px 175px 80px 175px;
-    background-color: #eeeeee;
+  padding: 8% 12% 8% 12%;
+  background-color: #eeeeee;
+}
+.contactheading {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 2%;
+}
+.contactboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 .box3 {
   background-color: #ffffff;
@@ -180,7 +194,6 @@ a#first {
   box-sizing: border-box;
   height: 200px;
   width: 46%;
-  margin: 1px 30px 1px 1px;
   padding: 30px 30px 30px 30px;
 }
 .box4 {
@@ -189,20 +202,22 @@ a#first {
   box-sizing: border-box;
   height: 200px;
   width: 46%;
-  margin: 1px 1px 1px 30px;
   padding: 30px 30px 30px 30px;
 }
 .map {
-  margin: 0px;
+  margin: 0%;
 }
 .map #locmap {
   width: 100%;
 }
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: #00897f;
   height: 125px;
   width: 100%;
-  margin: 0px;
+  margin: 0%;
 }
 /* On devices less than 1257px */
 @media(max-width: 1257px) {
