@@ -96,14 +96,16 @@ a#second {
   padding: 0;
   overflow: hidden;
 }
-.topnav ul {
+.topnav .title-area {
+  list-style-type: none;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
+  float: left;
 }
-.topnav ul:first-child {
-  float: left !important;
+.topnav .nav-items {
+  list-style-type: none;
+  display: flex;
+  align-items: flex-end;
+  float: right;
 }
 .topnav ul li {
   list-style-type: none;
