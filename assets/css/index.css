@@ -51,7 +51,7 @@ a#second {
   font-size: 1em;
   color: #f26522;
   text-transform: none;
-  justify-content: center;
+  text-align: center;
 }
 .topnav #h1 {
   font-family: 'PT Sans Narrow', bold;
@@ -128,7 +128,6 @@ a#second {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  text-align: left;
   padding: 2%;
   margin-bottom: 80px;
 }
@@ -210,6 +209,11 @@ a#second {
   height: 200px;
   width: 46%;
   padding: 30px 30px 30px 30px;
+}
+.address ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
 }
 .map {
   margin: 0%;
