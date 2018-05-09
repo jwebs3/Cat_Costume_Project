@@ -2,19 +2,19 @@ body {
   margin: 0;
 }
 
-*/Text Styles*/
+/*Text Styles*/
 
 h1 {
-  font-family: 'PT Sans Narrow', bold;
+  font: 'PT Sans Narrow', bold;
   text-shadow:0 0 1px transparent;
   font-size: 1.875em;
   color: #323232;
-  text-align: center !important;
+  text-align: center;
   padding: 50px;
   margin: 0px;
 }
 h2 {
-  font-family: 'PT Sans Narrow', bold;
+  font: 'PT Sans Narrow', bold;
   text-transform: uppercase;
   text-shadow:0 0 1px transparent;
   font-size: 1.5em;
@@ -23,7 +23,7 @@ h2 {
   margin: 0px 0 10px 0;
 }
 h3 {
-  font-family: 'PT Serif';
+  font: 'PT Serif';
   text-shadow:0 0 1px transparent;
   font-size: 1em;
   color: #323232;
@@ -31,38 +31,31 @@ h3 {
   margin: 0px;
 }
 p {
-  font-family: 'PT Serif';
+  font: 'PT Serif';
   text-shadow:0 0 1px transparent;
   font-size: .875em;
   color: #323232;
   line-height: 1.75em;
   text-align: left;
 }
-a#first {
-  font-family: 'PT Serif';
+.address #address {
+  font: 'PT Serif';
   text-shadow:0 0 1px transparent;
   font-size: 1em;
   color: #f26522;
   text-transform: none;
-}
-a#second {
-  font-family: 'PT Serif';
-  text-shadow:0 0 1px transparent;
-  font-size: 1em;
-  color: #f26522;
-  text-transform: none;
-  text-align: center;
 }
 .topnav #h1 {
-  font-family: 'PT Sans Narrow', bold;
+  font: 'PT Sans Narrow', bold;
   text-shadow:0 0 1px transparent;
   font-size: 1.5em;
   color: #323232;
 }
 .topnav #p {
-  font-family: 'PT Sans', bold;
+  font: 'PT Sans', bold;
   text-transform: uppercase;
-  text-shadow:0 0 1px transparent;
+  text-shadow: 0 0 1px transparent;
+  text-decoration: none;
   font-size: 0.9em;
   color: #323232;
 }
@@ -76,7 +69,7 @@ a#second {
   margin: 0px;
 }
 .footer h1 {
-  font-family: 'PT Sans Narrow', bold;
+  font: 'PT Sans Narrow', bold;
   text-shadow:0 0 1px transparent;
   font-size: 1.25em;
   color: #ffffff;
@@ -84,7 +77,7 @@ a#second {
   text-align: center;
 }
 
-*/Page Styles*/
+/*Page Styles*/
 
 .topnav {
   padding: 10px 10px 10px 10px;
@@ -118,8 +111,11 @@ a#second {
 .splash {
   width: 100%;
 }
-.splash #mainimage{
+.splash #mainimage {
   width: 100%;
+}
+.splash #mobileimage {
+   display: none;
 }
 .main {
   margin: 8% 12% 8% 12%;
@@ -162,17 +158,7 @@ a#second {
   margin: 8% 12% 8% 12%;
   padding: 2%;
 }
-.middle #circle1 {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-}
-.middle #circle2 {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-}
-.middle #circle3 {
+.middle .circleimage {
   border-radius: 50%;
   width: 250px;
   height: 250px;
@@ -210,10 +196,19 @@ a#second {
   width: 46%;
   padding: 30px 30px 30px 30px;
 }
-.address ul {
+.addressbox1 {
+  display: inline-flex;
+  justify-content: flex-start;
+  width: 30%;
+}
+.addressbox2 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 65%;
+}
+.address {
   display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
+  justify-content: flex-start;
 }
 .map {
   margin: 0%;
@@ -302,6 +297,13 @@ a#second {
   }
 /* On devices less than 785px */
 @media(max-width: 785px) {
+  .splash #mainimage {
+    display: none;
+  }
+  .splash #mobileimage {
+   display: block;
+   width: 100%;
+ }
   .mainboxes {
     flex-direction: column;
   }
